@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetArt Boutique | Artisanal Confectionery</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">🍰 SweetArt Boutique</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Catalog</a></li>
+                    <li><a href="cart.html">Cart ({{ cartCount }})</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <h1 class="page-title">Our Artisanal Creations</h1>
+            
+            <div class="products-grid">
+                <div v-for="product in products" :key="product.id" class="product-card">
+                    <img :src="product.image" :alt="product.name" class="product-image">
+                    <div class="product-info">
+                        <span class="product-category">{{ product.category }}</span>
+                        <h3 class="product-title">{{ product.name }}</h3>
+                        <p class="product-desc">{{ product.description }}</p>
+                        <div class="product-footer">
+                            <span class="product-price">${{ product.price.toFixed(2) }}</span>
+                            <button @click="addToCart(product)" class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
