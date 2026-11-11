@@ -42,10 +42,10 @@ sweetart-boutique/
 ## Installation & Setup
 
 1. Clone the repository:
-   ```bash
+   
    git clone [https://github.com/daria999333/sweetart-boutique.git](https://github.com/daria999333/sweetart-boutique.git)
    cd sweetart-boutique
-   ```
+   
 
 2. Install backend dependencies:
    ```bash
