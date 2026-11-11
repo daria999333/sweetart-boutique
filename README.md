@@ -1,5 +1,10 @@
 # SweetArt Boutique 🍰✨
 
+![Node.js](https://img.shields.io/badge/Node.js-Express-green?style=flat-square&logo=node.js&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-3-brightgreen?style=flat-square&logo=vuedotjs&logoColor=white)
+![SQLite](https://img.shields.io/badge/Database-SQLite-blue?style=flat-square&logo=sqlite&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)
+
 A multi-page full-stack web application for an artisanal confectionery shop. Built with Node.js, Express, SQLite, and Vue.js, `SweetArt Boutique` provides a complete online shopping experience including an interactive catalog, dynamic cart management, and order placement.
 
 ## Features
